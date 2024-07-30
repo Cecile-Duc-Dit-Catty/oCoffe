@@ -1,0 +1,162 @@
+
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  font-family: "Inria Sans", sans-serif;
+  background-color: #f3f3f3;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #232020;
+}
+
+header {
+  background-color: #c89f74;
+  border-bottom: 2px solid #2320203d;
+  position: relative;
+}
+
+header nav.expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 80vw;
+  height: 100%;
+  padding: 4rem;
+  gap: 2rem;
+
+  color: var(--color-cream);
+  background-color: var(--color-dark);
+
+  animation: menu-slide-in 0.3s;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.logo h1 {
+  font-weight: 400;
+}
+
+header button {
+    background-color: inherit;
+    color: #232020;
+    height: 1.7rem;
+    width: 1.4rem;
+  
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+.menu-container ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+.menu-container {
+  font-size: 1.1rem;
+}
+
+/* @media screen and (min-width: 1280px) {
+  /* Hide "menu button" on large screen by default */
+  /* header button {
+      display: none;
+  }
+} */
+
+/* @media screen and (max-width: 1280px) {
+  /* Hide all menu links on small screen by default */
+  /* header li {
+    display: none;
+  }
+} */
+
+
+  /* Styles pour les écrans très petits, comme certains téléphones en mode portrait */
+/* @media screen and (max-width: 320px) {
+
+  /* When navbar is expanded, re-order stuff */
+/* header nav.expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 80vw;
+  height: 100%;
+  padding: 4rem;
+  gap: 2rem;
+
+  color: #232020;
+  background-color: #c89f74;
+
+  animation: menu-slide-in 0.3s;
+}
+
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  .menu-container button {
+    display: flex;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 10px;
+    margin-right: 10px;    
+    
+  }
+
+  .logo img {
+    width: 3rem;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+
+
+  
+ */
+
+
+
+/* 
+}
+   */
+ 

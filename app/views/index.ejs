@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+
+<section class="mainContent">
+  <div class="mainContent__introduction">
+    <h2>oCoffe : Un voyage de Saveurs</h2>
+    <div class="mainContent__paragraph">
+      <p id="para-one">
+        Jean et Jacques Pepper, deux frères passionnés par le café, sont
+        les fondateurs de notre boutique. Leur expertise approfondie et
+        leur amour pour cette boisson les ont inspirés à créer un espace
+        où le café est célébré comme une expérience raffinée.
+      </p>
+    </div>
+    <div class="mainContent__paragraph">
+      <p id="para-two">
+        Profitez d’une ambiance chaleureuse et des arômes envoûtants du
+        café fraîchement moulu. Explorez notre sélection de grains
+        provenant des quatre coins du monde et savourez chaque tasse dans
+        un cadre confortable.
+      </p>
+    </div>
+    <div class="mainContent__paragraph">
+      <p id="para-three">
+        Inspirés par un voyage en Colombie et les plantations locales,
+        Jean et Jacques ont mis en place une boutique dédiée à la qualité
+        du café. Ils offrent des grains durables et équitables,
+        garantissant une expérience sensorielle unique à chaque visite.
+      </p>
+    </div>
+    <div class="mainContent__btn">
+      <button class="btn_main">Voir le catalogue</button>
+    </div>
+  </div>
+  <div class="mainContent__img">
+    <img
+      src="../images/about.jpg"
+      alt=""
+    />
+  </div>
+</section>
+
+<section class="newsContent">
+  <h3>Nouveautées</h3>
+  
+  <div class="newsContent__articleDisposition">
+    <% cafes.forEach(cafe => { %>
+    <article id="article" class="newsContent__article">
+      
+      <div class="newsContent__img">
+        <img
+          src="../images/coffees/105589090.png"
+          alt=""
+        />
+      </div>
+      
+        <li class="product_description">
+          <ul><strong><%= cafe.nom %></strong></ul>
+          <ul><strong>Description :</strong> <%= cafe.description %></ul>
+          <ul><strong>Référence :</strong> <%= cafe.reference %></ul>
+          <ul><strong>Origine :</strong> <%= cafe.origine %></ul>
+          <ul><strong>Prix au kilo :</strong> <%= cafe.prix_au_kilo %></ul>
+          <ul><strong>Caractéristique principale :</strong> <%= cafe.caractéristique_principale %></ul>
+          <ul><strong>Disponible :</strong> <%= cafe.disponible %></ul>
+        </li>
+      <button class="btn_main btn__article"><a href="/produit/:id">Découvrir</a></button>
+    
+    </article>
+    <% }) %>
+    
+  </div>
+</section>
+
+<%- include('partials/footer') %>

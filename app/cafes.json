@@ -1,0 +1,146 @@
+[
+  {
+    "nom": "Espresso",
+    "description": "Café fort et concentré préparé en faisant passer de l'eau chaude à travers du café finement moulu.",
+    "référence": "100955890",
+    "origine": "Italie",
+    "prix_au_kilo": "20.99 €",
+    "caractéristique_principale": "Corsé",
+    "disponible": true
+  },
+  {
+    "nom": "Columbian",
+    "description": "Café moyennement corsé avec une acidité vive et une saveur riche.",
+    "référence": "100955894",
+    "origine": "Colombie",
+    "prix_au_kilo": "18.75 €",
+    "caractéristique_principale": "Acide",
+    "disponible": true
+  },
+  {
+    "nom": "Ethiopian Yirgacheffe",
+    "description": "Réputé pour son arôme floral, son acidité vive et ses notes de saveur citronnée.",
+    "référence": "105589090",
+    "origine": "Éthiopie",
+    "prix_au_kilo": "22.50 €",
+    "caractéristique_principale": "Fruité",
+    "disponible": true
+  },
+  {
+    "nom": "Brazilian Santos",
+    "description": "Café doux et lisse avec un profil de saveur de noisette.",
+    "référence": "134009550",
+    "origine": "Brésil",
+    "prix_au_kilo": "17.80 €",
+    "caractéristique_principale": "Doux",
+    "disponible": true
+  },
+  {
+    "nom": "Guatemalan Antigua",
+    "description": "Café corsé avec des nuances chocolatées et une pointe d'épice.",
+    "référence": "256505890",
+    "origine": "Guatemala",
+    "prix_au_kilo": "21.25 €",
+    "caractéristique_principale": "Corsé",
+    "disponible": true
+  },
+  {
+    "nom": "Kenyan AA",
+    "description": "Café complexe connu pour son acidité rappelant le vin et ses saveurs fruitées.",
+    "référence": "295432730",
+    "origine": "Kenya",
+    "prix_au_kilo": "23.70 €",
+    "caractéristique_principale": "Acide",
+    "disponible": true
+  },
+  {
+    "nom": "Sumatra Mandheling",
+    "description": "Café profond et terreux avec un corps lourd et une faible acidité.",
+    "référence": "302932754",
+    "origine": "Indonésie",
+    "prix_au_kilo": "19.95 €",
+    "caractéristique_principale": "Corsé",
+    "disponible": true
+  },
+  {
+    "nom": "Costa Rican Tarrazu",
+    "description": "Café vif et net avec une finition propre et une acidité vive.",
+    "référence": "327302954",
+    "origine": "Costa Rica",
+    "prix_au_kilo": "24.50 €",
+    "caractéristique_principale": "Acide",
+    "disponible": true
+  },
+  {
+    "nom": "Vietnamese Robusta",
+    "description": "Café audacieux et fort avec une saveur robuste distinctive.",
+    "référence": "549549090",
+    "origine": "Vietnam",
+    "prix_au_kilo": "16.75 €",
+    "caractéristique_principale": "Épicé",
+    "disponible": true
+  },
+  {
+    "nom": "Tanzanian Peaberry",
+    "description": "Acidité vive avec un profil de saveur rappelant le vin et un corps moyen.",
+    "référence": "582954954",
+    "origine": "Tanzanie",
+    "prix_au_kilo": "26.80 €",
+    "caractéristique_principale": "Fruité",
+    "disponible": true
+  },
+  {
+    "nom": "Jamaican Blue Mountain",
+    "description": "Reconnu pour sa saveur douce, son acidité vive et son absence d'amertume.",
+    "référence": "589100954",
+    "origine": "Jamaïque",
+    "prix_au_kilo": "39.25 €",
+    "caractéristique_principale": "Doux",
+    "disponible": true
+  },
+  {
+    "nom": "Rwandan Bourbon",
+    "description": "Café avec des notes florales prononcées, une acidité vive et un corps moyen.",
+    "référence": "650753915",
+    "origine": "Rwanda",
+    "prix_au_kilo": "21.90 €",
+    "caractéristique_principale": "Fruité",
+    "disponible": true
+  },
+  {
+    "nom": "Panamanian Geisha",
+    "description": "Café rare aux arômes floraux complexes, une acidité brillante et un profil de saveur distinctif.",
+    "référence": "795501340",
+    "origine": "Panama",
+    "prix_au_kilo": "42.00 €",
+    "caractéristique_principale": "Fruité",
+    "disponible": true
+  },
+  {
+    "nom": "Peruvian Arabica",
+    "description": "Café équilibré avec des notes de chocolat, une acidité modérée et un corps velouté.",
+    "référence": "954589100",
+    "origine": "Pérou",
+    "prix_au_kilo": "19.40 €",
+    "caractéristique_principale": "Chocolaté",
+    "disponible": false
+  },
+  {
+    "nom": "Hawaiian Kona",
+    "description": "Café rare au goût riche, une acidité douce et des nuances subtiles.",
+    "référence": "958090105",
+    "origine": "Hawaï",
+    "prix_au_kilo": "55.75 €",
+    "caractéristique_principale": "Doux",
+    "disponible": false
+  },
+  {
+    "nom": "Nicaraguan Maragogipe",
+    "description": "Café avec des notes de fruits, une acidité vive et un corps plein.",
+    "référence": "691550753",
+    "origine": "Nicaragua",
+    "prix_au_kilo": "28.60 €",
+    "caractéristique_principale": "Fruité",
+    "disponible": false
+  }
+]

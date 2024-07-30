@@ -1,0 +1,95 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 150px;
+  margin-top: 20px;
+}
+
+.main__container {
+  width: 90%;
+  border: 1px, solid, #dedede;
+  border-radius: 10px;
+  background-color: #f6f3f0;
+  padding-block: 30px;
+  padding-inline: 40px;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/coffees/256505890.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  opacity: 90%;
+}
+
+.title__container h2 {
+  color: #ebebeb;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 3rem;
+}
+
+.product__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.product__container--all {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.productContent__article {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  width: 50%;
+  border: 1px, solid, #dedede;
+  border-radius: 10px;
+  background-color: #f6f3f0;
+}
+
+.productContent__article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px, solid, #cecece;
+}
+
+.productContent__paragraph {
+  font-size: 0.8rem;
+  padding-inline: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.btn_main {
+  background-color: #f4ead5;
+  font-weight: bolder;
+  border: 1px, solid #cecece;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.btn__article {
+  margin: auto;
+  margin-block: 20px;
+  width: 50%;
+}
+
+.btn__allSee {
+  margin-block: 80px;
+  font-size: 1.5rem;
+  margin: auto;
+  width: 20%;
+}

@@ -1,0 +1,281 @@
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  margin-block: 30px;
+  gap: 30px;
+}
+
+.mainContent__img img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.mainContent__introduction {
+  width: 50%;
+  border: 1px, solid, #dedede;
+  border-radius: 10px;
+  background-color: #f6f3f0;
+}
+
+#article {
+  border: 1px, solid, #dedede;
+  border-radius: 10px;
+  background-color: #f6f3f0;
+}
+
+
+.mainContent__introduction h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.mainContent__paragraph {
+  font-weight: 200;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-inline: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.newsContent__articleDisposition {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  row-gap : 100px;
+  column-gap : 300px
+  
+}
+
+.newsContent__article {
+  width: 300px;
+}
+
+.product_description {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-inline: 10px;
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+.mainContent__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_main {
+  background-color: #f4ead5;
+  font-weight: bolder;
+  border: 1px, solid #cecece;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.newsContent {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.newsContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+
+.newsContent img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px, solid, #cecece;
+}
+
+.newsContent__paragraph {
+  font-size: 0.8rem;
+  padding-inline: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.btn__article {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  
+}
+/* Tout petit ecrans de telephones */
+/* @media screen and (max-width: 320px) {
+
+
+  header {
+    width: 100%;
+    margin: 0;
+  }
+
+  body {
+  margin: 0;
+  padding: 0;
+}
+
+ main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 0;
+ }
+ 
+ .mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+
+ }
+
+
+ .mainContent__introduction {
+  width: 250px;
+  height: 320px;
+ }
+
+ .mainContent__img {
+  display: none;
+ }
+
+ .mainContent__introduction h2 {
+  font-size: 1rem;
+  margin-inline: 0;
+  padding-inline: 50px;
+  padding-top: 10px;
+ }
+
+ .mainContent__paragraph {
+  font-size: 0.8rem;
+ }
+
+ #para-two {
+ 
+ }
+
+ #para-one, #para-three {
+  display: none;
+ }
+
+ .mainContent__btn {
+  position: relative;
+  bottom: 50px;
+ }
+
+
+ 
+ .newsContent__articleDisposition {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+ }
+
+ .newsContent h3 {
+  text-align: center;
+  margin-top: 20px;
+ }
+
+} */
+
+
+
+ /* Pour les écrans moyens tétélphone large */
+/* @media screen and (min-width: 481px) and (max-width: 600px) { 
+  html {
+    width: 100%;
+    margin: 0;
+  }
+  
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  } */
+
+  
+
+  /* .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mainContent__introduction {
+    width: 70%;
+     margin: 0;
+  }
+
+  .mainContent__introduction h2 {
+    font-size: 1.2rem;
+  }
+
+  .mainContent__introduction p {
+    font-size: 0.9rem;
+  
+  }
+
+  .mainContent__img {
+    display: none;
+  } */
+
+
+/* Styles pour les écrans moyens (tablettes) */
+/* @media screen and (min-width: 600px) {
+  header {
+    margin: 0;
+  }
+
+  .menu-container li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .menu-container ul {
+    gap: 15px;
+  }
+
+  .menu-container button {
+    display: none;
+  }
+}
+/* Styles pour les écrans larges (ordinateurs de bureau) */
+/* @media screen and (min-width: 1024px) {
+
+}
+
+/* Styles pour les écrans très larges (grands écrans de bureau) */
+/* @media screen and (min-width: 1440px) { */ 
+
+/* }  */
