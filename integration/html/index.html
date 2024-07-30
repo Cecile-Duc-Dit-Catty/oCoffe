@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>oCoffe</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style-index.css" />
-    <link rel="stylesheet" href="reset.css" />
+
+    <!-- Common styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style-index.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,32 +22,32 @@
       <div class="header__container">
         <div class="logo">
           <img
-            src="/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/logo.svg"
+            src="../images/logo.svg"
             alt=""
           />
           <h1><a href="#">oCoffe</a></h1>
         </div>
-        <div class="nav__links">
-          <ul>
-            <div class="nav__links-link">
-              <li><a href="#">Accueil</a></li>
-            </div>
-            <div class="nav__links-link">
-              <li><a href="#">Catalogue</a></li>
-            </div>
-            <div class="nav__links-link">
-              <li><a href="#">Boutique</a></li>
-            </div>
-          </ul>
-        </div>
-      </div>
+        <nav class="menu-container" id="menu">
+          <!-- Menu burger icon -->
+           <!-- <button id="menu-button" title="Montrer les liens de navigation" type="button">
+              <svg width="100%" height="100%" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="none"><path d="M3 5H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button> -->
+          <!-- Navigation menu -->
+              <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Catalogue</a></li>
+                  <li><a href="#">Boutique</a></li>
+              </ul>
+          
+          </div>
+        </nav>
     </header>
     <main>
       <section class="mainContent">
         <div class="mainContent__introduction">
           <h2>oCoffe : Un voyage de Saveurs</h2>
           <div class="mainContent__paragraph">
-            <p>
+            <p id="para-one">
               Jean et Jacques Pepper, deux frères passionnés par le café, sont
               les fondateurs de notre boutique. Leur expertise approfondie et
               leur amour pour cette boisson les ont inspirés à créer un espace
@@ -52,7 +55,7 @@
             </p>
           </div>
           <div class="mainContent__paragraph">
-            <p>
+            <p id="para-two">
               Profitez d’une ambiance chaleureuse et des arômes envoûtants du
               café fraîchement moulu. Explorez notre sélection de grains
               provenant des quatre coins du monde et savourez chaque tasse dans
@@ -60,7 +63,7 @@
             </p>
           </div>
           <div class="mainContent__paragraph">
-            <p>
+            <p id="para-three">
               Inspirés par un voyage en Colombie et les plantations locales,
               Jean et Jacques ont mis en place une boutique dédiée à la qualité
               du café. Ils offrent des grains durables et équitables,
@@ -73,7 +76,7 @@
         </div>
         <div class="mainContent__img">
           <img
-            src="/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/about.jpg"
+            src="../images/about.jpg"
             alt=""
           />
         </div>
@@ -85,7 +88,7 @@
           <article id="article-1" class="newsContent__article">
             <div class="newsContent__img">
               <img
-                src="/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/coffees/105589090.png"
+                src="../images/coffees/105589090.png"
                 alt=""
               />
             </div>
@@ -103,7 +106,7 @@
           <article id="article-2" class="newsContent__article">
             <div class="newsContent__img">
               <img
-                src="/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/coffees/105589090.png"
+                src="../images/coffees/105589090.png"
                 alt=""
               />
             </div>
@@ -121,7 +124,7 @@
           <article id="article-3" class="newsContent__article">
             <div class="newsContent__img">
               <img
-                src="/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/coffees/105589090.png"
+                src="../images/coffees/105589090.png"
                 alt=""
               />
             </div>
@@ -139,5 +142,6 @@
         </div>
       </section>
     </main>
+    <script src="../js/script.js"></script>
   </body>
 </html>
