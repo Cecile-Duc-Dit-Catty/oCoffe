@@ -19,10 +19,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/s09-ocoffee-Cecile-Duc-Dit-Catty/docs/demande-client/00.assets/coffees/256505890.png");
+  background-image: url("../images/coffees/256505890.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
   height: 250px;
   opacity: 90%;
 }

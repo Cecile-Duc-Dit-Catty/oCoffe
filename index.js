@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const path = require('path');
 
@@ -8,6 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'app', 'views'));
 app.use(express.static(path.join(__dirname, 'public')))
+
 
 // Importer la route de la page d'accueil
 const homeRouter = require('./app/router');  // Ici, on importe le routeur défini dans 'routes/home.js'

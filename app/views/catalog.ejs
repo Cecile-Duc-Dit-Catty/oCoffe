@@ -6,48 +6,21 @@
       </div>
       <section class="product__container">
         <div class="product__container--all">
+          <% cafes.forEach(cafe => { %>
           <article id="article-1" class="productContent__article">
             <div class="productContent__img">
               <img
-                src="../images/coffees/105589090.png"
+                src="../images/coffees/<%= cafe.reference %>.png"
                 alt=""
               />
             </div>
+            <h2><%= cafe.nom %></h2>
             <p class="productContent__paragraph">
-              Laissez-vous surprendre par de nouvelles saveurs et arômes,
-              soigneusement choisis pour enrichir votre expérience café. Venez
-              vite les déguster !
+              <%= cafe.description %>
             </p>
-            <button class="btn_main btn__article">Découvrir</button>
+            <button class="btn_main btn__article"><a href="/produit/:<%= cafe.reference %>">Découvrir</a></button>
           </article>
-          <article id="article-1" class="productContent__article">
-            <div class="productContent__img">
-              <img
-                src="../images/coffees/105589090.png"
-                alt=""
-              />
-            </div>
-            <p class="productContent__paragraph">
-              Laissez-vous surprendre par de nouvelles saveurs et arômes,
-              soigneusement choisis pour enrichir votre expérience café. Venez
-              vite les déguster !
-            </p>
-            <button class="btn_main btn__article">Découvrir</button>
-          </article>
-          <article id="article-1" class="productContent__article">
-            <div class="productContent__img">
-              <img
-                src="../images/coffees/105589090.png"
-                alt=""
-              />
-            </div>
-            <p class="productContent__paragraph">
-              Laissez-vous surprendre par de nouvelles saveurs et arômes,
-              soigneusement choisis pour enrichir votre expérience café. Venez
-              vite les déguster !
-            </p>
-            <button class="btn_main btn__article">Découvrir</button>
-          </article>
+          <% }) %>
         </div>
       </section>
       <button class="btn_main btn__allSee">Tout voir</button>

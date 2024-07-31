@@ -28,13 +28,13 @@
       </p>
     </div>
     <div class="mainContent__btn">
-      <button class="btn_main">Voir le catalogue</button>
+      <button class="btn_main"><a href="/catalogue">Voir le catalogue</a></button>
     </div>
   </div>
   <div class="mainContent__img">
     <img
-      src="../images/about.jpg"
-      alt=""
+      src="/../images/about.jpg"
+      alt="image du produit"
     />
   </div>
 </section>
@@ -48,7 +48,7 @@
       
       <div class="newsContent__img">
         <img
-          src="../images/coffees/105589090.png"
+          src="/../images/coffees/<%= cafe.reference %>.png"
           alt=""
         />
       </div>
@@ -56,13 +56,12 @@
         <li class="product_description">
           <ul><strong><%= cafe.nom %></strong></ul>
           <ul><strong>Description :</strong> <%= cafe.description %></ul>
-          <ul><strong>Référence :</strong> <%= cafe.reference %></ul>
           <ul><strong>Origine :</strong> <%= cafe.origine %></ul>
-          <ul><strong>Prix au kilo :</strong> <%= cafe.prix_au_kilo %></ul>
-          <ul><strong>Caractéristique principale :</strong> <%= cafe.caractéristique_principale %></ul>
-          <ul><strong>Disponible :</strong> <%= cafe.disponible %></ul>
+          <ul><strong>Prix au kilo :</strong> <%= cafe.prix_au_kilo %> €</ul>
+          <ul><strong>Caractéristique principale :</strong> <%= cafe.caracteristique_principale %></ul>
+          <ul><strong>Disponible :</strong> <%= cafe.disponible ? 'Oui' : 'Non' %></ul>
         </li>
-      <button class="btn_main btn__article"><a href="/produit/:id">Découvrir</a></button>
+      <button class="btn_main btn__article"><a href="/produit/:<%= cafe.reference %>">Découvrir</a></button>
     
     </article>
     <% }) %>

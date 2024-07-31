@@ -2,22 +2,20 @@
 
 <section class="product__content">
   <div class="product__content--presentation">
-    <h2>Café du Pérou</h2>
+    <h2><%= cafe.nom %></h2>
     <div class="product__content--image">
-    <img src="../images/coffees/954589100.png" alt="">
+    <img src="../images/coffees/<%= cafe.reference %>.png" alt="">
   </div>
   </div>
   <div class="product__content--caracteristics">
     <li>
-      <ul><strong>Description :</strong> Café fort et concentré préparé en faisant 
-        passer de l'eau chaude à travers du café finement moulu.</ul>
-      <ul><strong>Référence :</strong> 100955890</ul>
-      <ul><strong>Origine :</strong> Italie</ul>
-      <ul><strong>Prix au kilo :</strong> 20.99 €</ul>
-      <ul><strong>Caractéristique principale :</strong> Corsé</ul>
-      <ul><strong>Disponible :</strong> Oui</ul>
+      <ul><strong>Description :</strong> <%= cafe.description %></ul>
+      <ul><strong>Origine :</strong> <%= cafe.origine %></ul>
+      <ul><strong>Prix au kilo :</strong> <%= cafe.prix_au_kilo %> €</ul>
+      <ul><strong>Caractéristique principale :</strong> <%= cafe.caracteristique_principale %></ul>
+      <ul><strong>Disponible :</strong> <%= cafe.disponible ? 'Oui' : 'Non' %></ul>
     </li>
-      <button class="main__button catalog__button">Catalogue</button>
+      <button class="main__button catalog__button"><a href="/catalogue">Catalogue</a></button>
   </div>
   
 </section>
