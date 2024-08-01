@@ -17,6 +17,14 @@ const homeRouter = require('./app/router');  // Ici, on importe le routeur défi
 // Utiliser la route de la page d'accueil
 app.use('/', homeRouter);  // On utilise le routeur pour les requêtes à la racine '/'
 
+
+// gestion des routes non trouvées 404 
+app.use((req, res, next) => {
+  res.status(404).render('partials/page404');
+});
+
+
+
 // Démarrer le serveur
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);

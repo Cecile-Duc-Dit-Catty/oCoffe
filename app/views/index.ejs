@@ -2,7 +2,10 @@
 
 <section class="mainContent">
   <div class="mainContent__introduction">
-    <h2>oCoffe : Un voyage de Saveurs</h2>
+    <div class="content__title">
+    <h2>oCoffe : Un voyage de Saveurs </h2>
+    
+  </div>
     <div class="mainContent__paragraph">
       <p id="para-one">
         Jean et Jacques Pepper, deux frères passionnés par le café, sont
@@ -28,6 +31,7 @@
       </p>
     </div>
     <div class="mainContent__btn">
+      
       <button class="btn_main"><a href="/catalogue">Voir le catalogue</a></button>
     </div>
   </div>
@@ -54,12 +58,9 @@
       </div>
       
         <li class="product_description">
-          <ul><strong><%= cafe.nom %></strong></ul>
-          <ul><strong>Description :</strong> <%= cafe.description %></ul>
-          <ul><strong>Origine :</strong> <%= cafe.origine %></ul>
-          <ul><strong>Prix au kilo :</strong> <%= cafe.prix_au_kilo %> €</ul>
-          <ul><strong>Caractéristique principale :</strong> <%= cafe.caracteristique_principale %></ul>
-          <ul><strong>Disponible :</strong> <%= cafe.disponible ? 'Oui' : 'Non' %></ul>
+          <h3><%= cafe.nom %></h3>
+          <ul> <%= cafe.description %></ul>
+          
         </li>
       <button class="btn_main btn__article"><a href="/produit/:<%= cafe.reference %>">Découvrir</a></button>
     

@@ -28,6 +28,39 @@ return result.rows[0]
 
 },
 
+getLatestProduct: async () => {
+  const sql = `
+  SELECT * FROM coffe
+  ORDER BY created_at DESC
+  LIMIT 3
+  `;
+  
+  const result = await client.query(sql)
+
+  return result.rows;
+},
+
+getCafesByCategory: async (categoryName) => {
+  const sql = `
+    SELECT coffe.*
+    FROM coffe
+    INNER JOIN category ON coffe.category_id = category.id
+    WHERE category.name ILIKE $1;
+  `;
+
+  // Passer les paramètres dans un tableau comme deuxième argument
+  const result = await client.query(sql, [`%${categoryName}%`]);
+  console.log('SQL Result:', result);  // Pour déboguer
+  return result.rows;
+},
+
+getAllCategories: async () => {
+  const sql = 'SELECT * FROM category';
+  const result = await client.query(sql);
+  console.log('getAllCategories Result:', result);  // Ajoutez cette ligne pour déboguer
+  return result.rows;
+},
+
 };
 
 module.exports = dataMapper;

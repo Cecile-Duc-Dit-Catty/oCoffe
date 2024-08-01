@@ -1,13 +1,29 @@
 <%- include('partials/header') %>
-
-<div class="image__container"></div>
+      <section class="header-products">
       <div class="title__container">
         <h2>Notre Catalogue</h2>
       </div>
-      <section class="product__container">
-        <div class="product__container--all">
+      </section>
+
+      <section class="products">
+        <div class="selector__container">
+            <form action="/catalogue" method="get">
+              <label for="coffes__byCategory">Filtrer :</label>
+                <select id="coffes__byCategory" name="coffes__byCategory">
+                  <% categories.forEach(categorie => { %>
+                    <option value="<%= categorie.name %>" <%= categoryName === categorie.name ? 'selected' : '' %>><%= categorie.name %></option>
+                  <% }) %>
+                  
+            </select>
+            <button button class="selector__btn" type="submit">Afficher le résultat</button>
+            <a href="/catalogue"><button class="selector__btn" type="button">Effacer le filtre</button></a>
+        </div>
+          
+            </form>
+          </div>
+          <div class="product__container--all">
           <% cafes.forEach(cafe => { %>
-          <article id="article-1" class="productContent__article">
+          <article id="article" class="productContent__article">
             <div class="productContent__img">
               <img
                 src="../images/coffees/<%= cafe.reference %>.png"
@@ -18,11 +34,25 @@
             <p class="productContent__paragraph">
               <%= cafe.description %>
             </p>
+            <div class="product__information">
+            <li>
+              <ul><strong>Origine :</strong><%= cafe.origine %></ul>
+              <ul><strong>Prix : </strong><%= cafe.prix_au_kilo %> €</ul>
+              <ul> <strong>Caractéristique : </strong><%= cafe.caracteristique_principale %></ul>
+              <ul><strong>Disponible : </strong><%= cafe.disponible ? '✅' : '❌'%></ul>
+            </li>
+            </div>
             <button class="btn_main btn__article"><a href="/produit/:<%= cafe.reference %>">Découvrir</a></button>
           </article>
           <% }) %>
         </div>
+        <div class="btn__seeAll">
+        <a href="/catalogue"><button type="button" class="btn__allSee">Tout voir</button></a>
+        </div>
       </section>
-      <button class="btn_main btn__allSee">Tout voir</button>
+      
+      
+      
 
-      <%- include('partials/footer') %>
+      <%- include('partials/footer') %>     <div class="selector__container">
+   

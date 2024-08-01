@@ -18,6 +18,17 @@
   background-color: #f6f3f0;
 }
 
+.content__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content__title img {
+  text-align: center;
+}
+
 #article {
   border: 1px, solid, #dedede;
   border-radius: 10px;
@@ -61,13 +72,29 @@
   margin-top: 20px;
   padding-bottom: 20px;
   padding-inline: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   list-style-type: none;
+
+}
+
+.product_description ul {
+  padding: 0;
+  text-align: center;
+}
+
+.product_description h3 {
+text-align: center;
+
 }
 
 .mainContent__btn {
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+ svg {
+  margin-right: 10px;
 }
 
 .btn_main {
