@@ -50,14 +50,12 @@ getCafesByCategory: async (categoryName) => {
 
   // Passer les paramètres dans un tableau comme deuxième argument
   const result = await client.query(sql, [`%${categoryName}%`]);
-  console.log('SQL Result:', result);  // Pour déboguer
   return result.rows;
 },
 
 getAllCategories: async () => {
   const sql = 'SELECT * FROM category';
   const result = await client.query(sql);
-  console.log('getAllCategories Result:', result);  // Ajoutez cette ligne pour déboguer
   return result.rows;
 },
 

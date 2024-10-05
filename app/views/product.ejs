@@ -1,23 +1,38 @@
 <%- include('partials/header') %>
 
-<section class="product__content">
-  <div class="product__content--presentation">
-    <h2><%= cafe.nom %></h2>
-    <div class="product__content--image">
-    <img src="../images/coffees/<%= cafe.reference %>.png" alt="">
-  </div>
-  </div>
-  <div class="product__content--caracteristics">
-    <li>
-      <ul><strong>Description :</strong> <%= cafe.description %></ul>
-      <ul><strong>Origine :</strong> <%= cafe.origine %></ul>
-      <ul><strong>Prix au kilo :</strong> <%= cafe.prix_au_kilo %> €</ul>
-      <ul><strong>Caractéristique principale :</strong> <%= cafe.caracteristique_principale %></ul>
-      <ul><strong>Disponible :</strong> <%= cafe.disponible ? 'Oui' : 'Non' %></ul>
-    </li>
+  <section class="product__content">
+    <div class="product__content--presentation">
+      <h2>
+        <%= cafe.nom %>
+      </h2>
+      <div class="product__content--image">
+        <img src="../images/coffees/<%= cafe.reference %>.png" alt="">
+      </div>
+    </div>
+    <div class="product__content--caracteristics">
+      <li>
+        <ul><strong>Description :</strong>
+          <%= cafe.description %>
+        </ul>
+        <ul><strong>Origine :</strong>
+          <%= cafe.origine %>
+        </ul>
+        <ul><strong>Prix au kilo :</strong>
+          <%= cafe.prix_au_kilo %> €
+        </ul>
+        <ul><strong>Caractéristique principale :</strong>
+          <%= cafe.caracteristique_principale %>
+        </ul>
+        Opération ternaire en JS :
+        si cafe.disponible alors la string est oui
+        Si cafe.disponible est false la string est 'Non' est affichée en dynamique.
+        <ul><strong>Disponible :</strong>
+          <%= cafe.disponible ? 'Oui' : 'Non' %>
+        </ul>
+      </li>
       <button class="main__button catalog__button"><a href="/catalogue">Catalogue</a></button>
-  </div>
-  
-</section>
+    </div>
 
-<%- include('partials/footer') %>
+  </section>
+
+  <%- include('partials/footer') %>
